@@ -1,0 +1,105 @@
+/**
+ * @file
+ * Footer Grid.
+ */
+
+
+/* Mobile First */
+.footer-legal {
+
+}
+.footer-info {
+
+
+  .first {
+
+  }
+
+  .second {
+
+  }
+
+  .third {
+
+  }
+
+  .fourth {
+
+  }
+}
+
+
+@include breakpoint($bp-tablet) {
+  .footer-legal {
+
+  }
+  .footer-info {
+
+
+    .first {
+      .container{
+        @include container;
+      }
+    }
+
+    .second {
+      .container{
+        @include container;
+      }
+    }
+
+    .third {
+      .container{
+        @include container;
+      }
+    }
+
+    .fourth {
+      .container{
+        @include container;
+      }
+    }
+  }
+}
+
+
+@include breakpoint($bp-desktop) {
+  .footer-legal {
+
+  }
+  .footer-info {
+    .first {
+      .container{
+        @include container;
+      }
+    }
+
+    .second {
+      .container{
+        @include container;
+      }
+    }
+
+    .third {
+      .container{
+        @include container;
+      }
+    }
+
+    .fourth {
+      .container{
+        @include container;
+      }
+    }
+  }
+}
+
+
+@include breakpoint($bp-large) {
+  .footer-legal {
+    @include container(100%);
+  }
+  .footer-info {
+    @include container(100%);
+  }
+}

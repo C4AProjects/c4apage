@@ -1,0 +1,104 @@
+/**
+ * @file
+ * Main Grid.
+ */
+.wrapper{
+  overflow: hidden;
+  background:#000000 url("../homebg.jpg") top center no-repeat;
+}
+
+/* Mobile First */
+#main {
+  @include container(100%);
+
+  #aside_left {
+    display: none;
+  }
+
+  #content {
+    @include span (12 of 12);
+  }
+
+  #aside_right {
+    display: none;
+  }
+}
+.highlighted{
+  .region-highlighted{
+    #block-homeemployerblock{
+      @include span (12 of 12);
+      min-height: 197px;
+    }
+    #block-homedeveloperblock{
+      @include span (12 of 12);
+      min-height: 197px;
+    }
+  }
+}
+
+@include breakpoint($bp-tablet) {
+  #main {
+    @include container(100%);
+  }
+  .highlighted{
+    .region-highlighted{
+      #block-homeemployerblock{
+        @include span (4 at 7 of 12 isolate);
+      }
+      #block-homedeveloperblock{
+        @include span (4 at 3 of 12 isolate);
+      }
+    }
+  }
+}
+
+
+@include breakpoint($bp-desktop) {
+  .highlighted{
+    .region-highlighted{
+      #block-homeemployerblock{
+        @include span (4 at 7 of 12 isolate);
+      }
+      #block-homedeveloperblock{
+
+        @include span (4 at 3 of 12 isolate);
+      }
+    }
+  }
+  #main {
+
+    .container{
+      @include container;
+    }
+
+
+    #aside_left {
+    }
+
+    #content {
+    }
+
+    #aside_right {
+      @include span (3 at 10 of 12);
+      display: block;
+    }
+  }
+}
+
+
+@include breakpoint($bp-large) {
+  .highlighted{
+    .region-highlighted{
+      #block-homeemployerblock{
+        @include span (4 at 7 of 12 isolate);
+      }
+      #block-homedeveloperblock{
+
+        @include span (4 at 2 of 12 isolate);
+      }
+    }
+  }
+  #main {
+    @include container(100%);
+  }
+}

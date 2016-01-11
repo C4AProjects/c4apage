@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * @file
+ * Contains c4apage.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function c4apage_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the c4apage module.
+    case 'help.page.c4apage':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('c4page config module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function c4apage_theme() {
+  $theme = [];
+
+  return $theme;
+}

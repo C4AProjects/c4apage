@@ -1,0 +1,14 @@
+{
+  "name": "drupal/c4apage",
+  "type": "drupal-module",
+  "description": "c4page config module",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "http://drupal.org/project/c4apage",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "http://drupal.org/project/issues/c4apage",
+    "source": "http://cgit.drupalcode.org/c4apage"
+  },
+  "require": { }
+}

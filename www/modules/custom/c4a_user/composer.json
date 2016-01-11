@@ -1,0 +1,14 @@
+{
+  "name": "drupal/c4a_user",
+  "type": "drupal-module",
+  "description": "User related",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/c4a_user",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "http://drupal.org/project/issues/c4a_user",
+    "source": "http://cgit.drupalcode.org/c4a_user"
+  },
+  "require": { }
+}

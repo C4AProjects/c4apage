@@ -1,0 +1,61 @@
+<?php
+
+/**
+ * @file
+ * Contains c4a_user.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function c4a_user_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the c4a_user module.
+    case 'help.page.c4a_user':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('User related') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function c4a_user_theme() {
+  $theme = [];
+
+  return $theme;
+}
+
+
+
+/**
+ * Implements hook_form_BASE_FORM_ID_alter().
+ */
+function c4a_user_form_user_register_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id)
+{
+//  $block = \Drupal::service('plugin.manager.block')->createInstance('facebook_login')->build();
+  $form['form_normal'] = array(
+    '#type' => 'item',
+    '#title'=> 'Register'
+  );
+  $form['form_normal']['field_full_name'] = $form['field_full_name'];
+  $form['form_normal']['field_full_name']['#weight'] = -1;
+  $form['form_normal']['account'] = $form['account'];
+  $form['form_normal']['account']['name']['#weight'] = -1;
+  $form['form_normal']['account']['email']['#weight'] = 1;
+  $form['form_normal']['account']['name']['#description']='';
+  $form['form_normal']['account']['mail']['#description'] = '';
+  $form['form_normal']['account']['#weight'] = 1;
+  unset($form['account']);
+  unset($form['field_full_name']);
+  unset($form['user_picture']);
+
+//  $form['social']['facebook'] = $block;
+//    print_r(array_keys($form));die();
+}

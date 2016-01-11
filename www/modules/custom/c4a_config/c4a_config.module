@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * @file
+ * Contains c4a_config.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function c4a_config_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the c4a_config module.
+    case 'help.page.c4a_config':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('C4A site config module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function c4a_config_theme() {
+  $theme = [];
+
+  return $theme;
+}

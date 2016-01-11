@@ -1,0 +1,156 @@
+/**
+ * @file
+ * Responsive navigation.
+ */
+
+
+/* Mobile First */
+.container {
+  margin: 0px auto;
+  overflow: hidden;
+  width: 1170px;
+  position: relative;
+}
+
+.scrolling {
+  header{
+    height: 66px;
+    background-color:#000 ;
+    nav {
+      ul {
+        margin: 0;
+      }
+    }
+  }
+}
+header {
+  display: block;
+  position: relative;
+  float: left;
+  margin-left: -100%;
+  width: 200px;
+  z-index: 10;
+  padding: 0;
+  nav {
+    ul {
+      @include transition(all .5s ease-out);
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      margin-top: 37px;
+      li {
+        display: block;
+        text-align: left;
+
+        a {
+          display: block;
+          color: #fff !important;
+          font-size: 12px;
+          font-weight: 700;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          transition: background 0.3s ease-in-out 0s;
+          padding-bottom: 15px;
+          padding-top: 15px;
+          text-decoration: none;
+        }
+        a {
+          -webkit-transition: all .2s ease-in-out;
+          -moz-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+          color: #fff;
+        }
+        a:focus ,a:hover{
+          background-color: rgba(255, 255, 255, 0.2);
+          border-bottom: 2px solid #fd9539;
+          outline: 0 none;
+        }
+      }
+    }
+  }
+}
+
+#main-wrapper {
+  position: relative;
+  margin: 0 auto;
+  float: left;
+  margin-left: 0;
+  width: 100%;
+  z-index: 2;
+  .mobile-container {
+    width: 100%;
+    display: block;
+  }
+}
+
+
+@include breakpoint($bp-tablet) {
+  header {
+    float: none;
+    margin-left: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 0;
+    position: fixed;
+    top:0;
+    height: 100px;
+    @include transition(all .5s ease-out);
+    background-color: transparent;
+
+    .logo {
+      float: left;
+      width: auto;
+    }
+
+    nav {
+      //float: right;
+      width: auto;
+      //line-height: 100px;
+
+      ul {
+        li {
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  #main-wrapper {
+    float: left;
+    margin-left: 0;
+    width: 100%;
+    padding-top: 0px;
+
+    .mobile-container {
+      display: none;
+    }
+  }
+}
+
+
+@include breakpoint($bp-desktop) {
+  header {
+    height: 150px;
+    z-index: 10;
+    nav {
+      float: left;
+      margin: 0;
+
+
+      > ul {
+        background-color: rgba(0, 0, 0, 0.4);
+        @include transition(all .5s ease-out);
+        //margin: 100px 0;
+      }
+    }
+  }
+
+  #main-wrapper {
+    padding-top: 0px;
+  }
+}
+
+
+@include breakpoint($bp-large) {
+
+}

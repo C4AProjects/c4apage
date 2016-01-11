@@ -1,0 +1,6 @@
+name: c4apage
+type: module
+description: c4page config module
+core: 8.x
+package: Other
+

@@ -1,0 +1,128 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: ousmanesamba
+ * Date: 4/2/15
+ * Time: 9:23 AM
+ */
+use Drupal\Component\Serialization\Json;
+
+/**
+ *
+ */
+function c4aportal_preprocess_html(&$variables){
+    // Add information about the number of sidebars.
+    if (!empty($variables['page']['aside_left']) && !empty($variables['page']['aside_right'])) {
+        $variables['attributes']['class'][] = 'layout-two-sidebars';
+    }
+    elseif (!empty($variables['page']['aside_left'])) {
+        $variables['attributes']['class'][] = 'layout-one-sidebar';
+        $variables['attributes']['class'][] = 'layout-sidebar-first';
+    }
+    elseif (!empty($variables['page']['sidebar_right'])) {
+        $variables['attributes']['class'][] = 'layout-one-sidebar';
+        $variables['attributes']['class'][] = 'layout-sidebar-second';
+    }
+    else {
+        $variables['attributes']['class'][] = 'layout-no-sidebars';
+    }
+    $is_front_page = \Drupal::service('path.matcher')->isFrontPage();
+    if (!$is_front_page) {
+        // Add unique class for each page.
+        $path = \Drupal::request()->getRequestUri();
+
+        // Add unique class for each website section.
+        list($section, ) = explode('/', $path, 2);
+        $arg = explode('/', $path);
+
+        if ($arg[0] == 'node' && isset($arg[1])) {
+            if ($arg[1] == 'add') {
+                $section = 'node-add';
+            }
+            elseif (isset($arg[2]) && is_numeric($arg[1]) && ($arg[2] == 'edit' || $arg[2] == 'delete')) {
+                $section = 'node-' . $arg[2];
+            }
+        }else{
+            if($arg[1]){
+                $section = $arg[1];
+            }
+        }
+        $variables['attributes']['class'][] = \Drupal\Component\Utility\Html::getClass('section-' . $section);
+    }else{
+        $variables['attributes']['class'][] ="front";
+    }
+}
+/**
+ * @param $vars
+ * Hook_preprocess_page
+ */
+function c4aportal_preprocess_page(&$vars){
+
+    global $base_url;
+    $vars['logo'] = $base_url .'/'. drupal_get_path('theme','c4aportal').'/logo.png';
+    $vars['#attached']['library'][] = "c4aportal/jquery.tooltipster";
+    $vars['#attached']['library'][] = "c4aportal/jquery.bxslider";
+    $vars['page']['content']['dialog_wrappers'] = array('#markup' => '<div id="login-ajax-dialog-wrapper"></div>');
+    if($vars['is_front']){
+        $vars['slideslogan'] = array(
+            "Home of the <span class='bold'>largest network</span> of <span class='upper'>african coders</span>",
+            "More than  <span class='bold'>code</span> practical<span class='bold'> Solutions</span>"
+        );
+        $vars['title'] = "";
+        $vars['page']['content']['c4aportal_content']="";
+//        kint($vars['page']['content']['c4aportal_content']);
+    }
+//    if(\Drupal::routeMatch()->getRouteName()=='user.login'){
+
+//        $block = \Drupal::service('plugin.manager.block')->createInstance('facebook_login')->build();
+//        $vars['page']['content']['facebook'] = $block;
+////        kint();
+//    }
+}
+
+function c4aportal_preprocess_block(&$vars){
+    if($vars['plugin_id']=='system_main_block'){
+        $vars['attributes']['class'][] = 'menu--main';
+    }
+}
+
+function c4aportal_css_alter(&$css){
+    if($css['jquery.bxslider.css']){
+        $css['jquery.bxslider.css']['weight'] = 195;
+    }
+    if($css['tooltipster.css']){
+        $css['tooltipster.css']['weight'] = 194;
+    }
+}
+
+function c4aportal_js_alter(&$js){
+
+    if($js['libraries/jquery.bxslider/jquery.bxslider.js']){
+        $js['libraries/jquery.bxslider/jquery.bxslider.js']['weight'] = 0.004;
+    }
+    if($js['libraries/tooltipster/js/jquery.tooltipster.min.js']){
+        $js['libraries/tooltipster/js/jquery.tooltipster.min.js']['weight'] = 0.0041;
+    }
+}
+
+function c4aportal_preprocess_menu(&$vars,$hook){
+    if ($hook == 'menu__main') { // We're doing that for main menu.
+        $options = array( 'attributes' =>
+            array(
+                'class' => 'use-ajax',
+                'data-accepts' => 'application/vnd.drupal-modal',
+                'data-dialog-options' => Json::encode(array(
+                    'width' => 600,
+                    'dialogClass'=> "login-modal"
+                ))
+            )
+        );
+        if($vars['items']['c4a_customs.login']){
+            $vars['items']['c4a_customs.login']['url']->setOptions($options);
+        }
+        if($vars['items']['c4a_customs.register']){
+            $vars['items']['c4a_customs.register']['url']->setOptions($options);
+        }
+    }
+}
+

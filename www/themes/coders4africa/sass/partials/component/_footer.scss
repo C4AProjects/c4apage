@@ -1,0 +1,23 @@
+#footer {
+  color: #999;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  text-align: center;
+  .ulbar li {
+    border-right: 1px solid #e7e7e7;
+    display: inline-block;
+    margin-bottom: 0;
+    padding: 0 5px;
+    a{
+      font-size: 14px;
+
+    }
+  }
+  ul.social > li {
+    display: inline-block;
+    margin: 0 0 20px;
+  }
+  a {
+    color: #999;
+  }
+}

@@ -1,0 +1,5 @@
+name: c4a_user
+type: module
+description: User related
+core: 8.x
+package: Other

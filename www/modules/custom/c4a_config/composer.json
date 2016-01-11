@@ -1,0 +1,14 @@
+{
+  "name": "drupal/c4a_config",
+  "type": "drupal-module",
+  "description": "C4A site config module",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/c4a_config",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "http://drupal.org/project/issues/c4a_config",
+    "source": "http://cgit.drupalcode.org/c4a_fonfig"
+  },
+  "require": { }
+}
