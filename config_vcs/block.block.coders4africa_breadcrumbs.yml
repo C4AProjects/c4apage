@@ -1,0 +1,20 @@
+uuid: 74484146-1fc7-4f2c-9f18-24f2f67cbcec
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - coders4africa
+id: coders4africa_breadcrumbs
+theme: coders4africa
+region: help
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

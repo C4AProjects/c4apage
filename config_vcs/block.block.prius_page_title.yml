@@ -1,0 +1,18 @@
+uuid: b4dd95be-b00c-42be-835d-93efcdd13f1a
+langcode: en
+status: true
+dependencies:
+  theme:
+    - prius
+id: prius_page_title
+theme: prius
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

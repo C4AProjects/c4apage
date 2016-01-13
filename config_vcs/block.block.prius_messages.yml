@@ -1,0 +1,20 @@
+uuid: 3f0d61db-98c5-4173-811a-26c915e9f366
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - prius
+id: prius_messages
+theme: prius
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: 7d641a85-8d1f-4997-8308-8b365b761bcd
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - c4aportal
+id: c4aportal_help
+theme: c4aportal
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

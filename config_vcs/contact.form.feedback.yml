@@ -1,0 +1,10 @@
+uuid: 857421e7-9df1-4861-a700-ea524f1af7f1
+langcode: en
+status: true
+dependencies: {  }
+id: feedback
+label: 'Website feedback'
+recipients:
+  - ousmanesamba@gmail.com
+reply: ''
+weight: 0

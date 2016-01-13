@@ -1,0 +1,16 @@
+uuid: 998b97ee-1980-429f-a342-662725c8a5f8
+langcode: en
+status: true
+dependencies: {  }
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access content'
+  - 'use text format restricted_html'
+  - 'access comments'
+  - 'access site-wide contact form'
+  - 'search content'
+  - 'access devel information'
+  - 'access kint'

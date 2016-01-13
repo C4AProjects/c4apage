@@ -1,0 +1,20 @@
+uuid: ab072fa0-e655-4026-9001-015ee7ecc4a5
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - coders4africa
+id: coders4africa_messages
+theme: coders4africa
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

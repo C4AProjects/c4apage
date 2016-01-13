@@ -1,0 +1,18 @@
+uuid: 5b0352cc-f0d0-4a98-bf03-3c5e0ac5fdf8
+langcode: en
+status: true
+dependencies:
+  theme:
+    - prius
+id: prius_local_actions
+theme: prius
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

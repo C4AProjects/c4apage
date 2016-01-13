@@ -1,0 +1,9 @@
+country:
+  default: US
+first_day: 1
+timezone:
+  default: Africa/Dakar
+  user:
+    configurable: false
+    warn: false
+    default: 0

@@ -1,0 +1,26 @@
+uuid: 11a7dce5-3365-447f-a404-4ec7cf4a3fb9
+langcode: en
+status: true
+dependencies:
+  module:
+    - c4apage
+    - system
+  theme:
+    - coders4africa
+id: contactblock
+theme: coders4africa
+region: content
+weight: -5
+provider: null
+plugin: contact_block
+settings:
+  id: contact_block
+  label: 'Contact block'
+  provider: c4apage
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

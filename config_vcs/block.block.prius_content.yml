@@ -1,0 +1,20 @@
+uuid: 43844712-3603-48d4-a500-e83447674ec0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - prius
+id: prius_content
+theme: prius
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

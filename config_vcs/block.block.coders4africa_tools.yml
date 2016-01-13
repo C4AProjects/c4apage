@@ -1,0 +1,24 @@
+uuid: 491f35f4-e43a-4ada-9504-4d55634d2f49
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - coders4africa
+id: coders4africa_tools
+theme: coders4africa
+region: help
+weight: 0
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

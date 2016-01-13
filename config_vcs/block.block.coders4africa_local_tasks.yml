@@ -1,0 +1,20 @@
+uuid: ea037869-fc1d-484d-9300-a460f15bc86f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - coders4africa
+id: coders4africa_local_tasks
+theme: coders4africa
+region: content
+weight: -3
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

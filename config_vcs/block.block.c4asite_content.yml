@@ -1,0 +1,20 @@
+uuid: c61fe02e-925c-4e84-af00-a683c5113943
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - c4asite
+id: c4asite_content
+theme: c4asite
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

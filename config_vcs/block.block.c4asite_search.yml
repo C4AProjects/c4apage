@@ -1,0 +1,20 @@
+uuid: fdf09d6f-2d2a-426d-8900-ac0bef59f055
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - c4asite
+id: c4asite_search
+theme: c4asite
+region: help
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: 132759e8-2fe3-4dd6-be01-1b1bac8202a9
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - prius
+id: prius_help
+theme: prius
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

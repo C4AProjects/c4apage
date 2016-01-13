@@ -1,0 +1,20 @@
+uuid: abcd624f-03b9-4a90-ab02-2c05cd3f7ae2
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - c4asite
+id: c4asite_help
+theme: c4asite
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

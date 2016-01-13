@@ -1,0 +1,18 @@
+uuid: 5770713b-c6b9-4191-a214-20e4fec371e3
+langcode: en
+status: true
+dependencies:
+  theme:
+    - c4asite
+id: c4asite_page_title
+theme: c4asite
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

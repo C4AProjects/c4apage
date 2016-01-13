@@ -1,0 +1,23 @@
+uuid: 8829568e-4b2b-4a8e-8209-9fb7d4f61fa0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - c4asite
+id: c4asite_branding
+theme: c4asite
+region: help
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

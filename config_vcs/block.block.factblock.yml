@@ -1,0 +1,26 @@
+uuid: 06a12ae1-c213-49ae-8506-6eb883b2d370
+langcode: en
+status: true
+dependencies:
+  module:
+    - c4apage
+    - system
+  theme:
+    - coders4africa
+id: factblock
+theme: coders4africa
+region: content
+weight: -6
+provider: null
+plugin: fact_block
+settings:
+  id: fact_block
+  label: 'Fact block'
+  provider: c4apage
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

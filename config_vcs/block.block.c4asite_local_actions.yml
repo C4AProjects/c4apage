@@ -1,0 +1,18 @@
+uuid: 898cbe6b-77b4-4a9e-ab02-2a18d8017fe8
+langcode: en
+status: true
+dependencies:
+  theme:
+    - c4asite
+id: c4asite_local_actions
+theme: c4asite
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

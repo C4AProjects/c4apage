@@ -1,0 +1,15 @@
+uuid: 5b08ebee-2f7e-44a4-8800-a10f37a926fc
+langcode: en
+status: true
+dependencies: {  }
+name: prius_desktop
+label: prius.desktop
+effects:
+  0355ac3a-4fa4-43b2-8200-ce3ccebceef2:
+    uuid: 0355ac3a-4fa4-43b2-8200-ce3ccebceef2
+    id: image_scale
+    weight: 1
+    data:
+      width: 992
+      height: null
+      upscale: false

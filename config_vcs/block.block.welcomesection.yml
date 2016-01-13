@@ -1,0 +1,26 @@
+uuid: 340f6788-31a2-4df9-a401-1d2aa66319f5
+langcode: en
+status: true
+dependencies:
+  module:
+    - c4apage
+    - system
+  theme:
+    - coders4africa
+id: welcomesection
+theme: coders4africa
+region: content
+weight: -8
+provider: null
+plugin: welcome_section
+settings:
+  id: welcome_section
+  label: 'Welcome section'
+  provider: c4apage
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

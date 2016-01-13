@@ -1,0 +1,18 @@
+uuid: e47c50e7-95d6-4cac-8700-d7c705e050dc
+langcode: en
+status: true
+dependencies:
+  theme:
+    - coders4africa
+id: coders4africa_page_title
+theme: coders4africa
+region: content
+weight: -4
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

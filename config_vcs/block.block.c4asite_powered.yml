@@ -1,0 +1,20 @@
+uuid: 85550a6b-f811-48c4-ba29-4175df848ea6
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - c4asite
+id: c4asite_powered
+theme: c4asite
+region: help
+weight: 10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

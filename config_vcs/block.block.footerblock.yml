@@ -1,0 +1,20 @@
+uuid: 8f2db5cc-da60-49dd-a224-3678e58d4aaa
+langcode: en
+status: true
+dependencies:
+  module:
+    - c4apage
+  theme:
+    - coders4africa
+id: footerblock
+theme: coders4africa
+region: footer
+weight: -10
+provider: null
+plugin: footer_block
+settings:
+  id: footer_block
+  label: 'Footer block'
+  provider: c4apage
+  label_display: '0'
+visibility: {  }

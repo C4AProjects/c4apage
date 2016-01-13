@@ -1,0 +1,20 @@
+uuid: d404a3b2-beb2-4f9c-a706-06068d3b56f8
+langcode: en
+status: true
+dependencies:
+  theme:
+    - c4asite
+id: c4asite_local_tasks
+theme: c4asite
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

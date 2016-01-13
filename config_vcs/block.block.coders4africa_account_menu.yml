@@ -1,0 +1,24 @@
+uuid: 0dc7346b-c1d1-4dc6-8842-663cc3009e5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - coders4africa
+id: coders4africa_account_menu
+theme: coders4africa
+region: help
+weight: 0
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+visibility: {  }

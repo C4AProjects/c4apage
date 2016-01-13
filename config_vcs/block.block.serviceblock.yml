@@ -1,0 +1,26 @@
+uuid: 3e867b7d-3acc-4492-aa3f-630af7a4a933
+langcode: en
+status: true
+dependencies:
+  module:
+    - c4apage
+    - system
+  theme:
+    - coders4africa
+id: serviceblock
+theme: coders4africa
+region: content
+weight: -7
+provider: null
+plugin: service_block
+settings:
+  id: service_block
+  label: 'Service block'
+  provider: c4apage
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

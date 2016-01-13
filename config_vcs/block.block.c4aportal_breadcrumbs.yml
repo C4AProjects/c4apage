@@ -1,0 +1,20 @@
+uuid: a907add9-3564-4f8a-ae45-69122782af3f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - c4aportal
+id: c4aportal_breadcrumbs
+theme: c4aportal
+region: help
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

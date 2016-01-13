@@ -1,0 +1,20 @@
+uuid: 829c3462-7d0c-4bbb-a311-1793d837f8d7
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - c4aportal
+id: c4aportal_content
+theme: c4aportal
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

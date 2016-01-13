@@ -1,0 +1,20 @@
+uuid: f0825dc6-9af6-4b0c-914f-7917ec1cfa21
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - coders4africa
+id: coders4africa_search
+theme: coders4africa
+region: help
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }

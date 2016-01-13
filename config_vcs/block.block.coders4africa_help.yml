@@ -1,0 +1,20 @@
+uuid: 2af9dee3-20c0-40b7-b841-65ea489196c1
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - coders4africa
+id: coders4africa_help
+theme: coders4africa
+region: content
+weight: -2
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

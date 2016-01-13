@@ -1,0 +1,20 @@
+uuid: d97332b1-eba8-4ad9-a800-adfee9f2c839
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - coders4africa
+id: coders4africa_content
+theme: coders4africa
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }
