@@ -1,0 +1,9 @@
+uuid: 04e4bddf-1c19-4b28-9952-829231a02241
+langcode: en
+status: true
+dependencies: {  }
+name: Class
+vid: class
+description: ''
+hierarchy: 0
+weight: 0

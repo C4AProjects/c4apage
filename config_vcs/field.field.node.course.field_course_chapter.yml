@@ -1,0 +1,26 @@
+uuid: 9a972e72-86fb-4b3c-8f08-0831cde26f5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_course_chapter
+    - node.type.chapter
+    - node.type.course
+id: node.course.field_course_chapter
+field_name: field_course_chapter
+entity_type: node
+bundle: course
+label: Chapter
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      chapter: chapter
+    sort:
+      field: _none
+field_type: entity_reference

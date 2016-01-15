@@ -1,0 +1,24 @@
+uuid: 96d7a7d8-5473-41e1-965a-908f04277223
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_c4a_video
+    - node.type.chapter
+  module:
+    - video_embed_field
+id: node.chapter.field_c4a_video
+field_name: field_c4a_video
+entity_type: node
+bundle: chapter
+label: Video
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    vimeo: vimeo
+    youtube: youtube
+field_type: video_embed_field

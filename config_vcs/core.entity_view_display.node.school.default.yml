@@ -1,0 +1,24 @@
+uuid: af3cb861-89c5-413a-8900-c39764fd62ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.school.body
+    - node.type.school
+  module:
+    - text
+    - user
+id: node.school.default
+targetEntityType: node
+bundle: school
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden: {  }
