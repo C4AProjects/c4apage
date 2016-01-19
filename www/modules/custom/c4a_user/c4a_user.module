@@ -39,10 +39,10 @@ function c4a_user_theme() {
  */
 function c4a_user_form_user_register_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id)
 {
-//  $block = \Drupal::service('plugin.manager.block')->createInstance('facebook_login')->build();
+  $block = \Drupal::service('plugin.manager.block')->createInstance('joinus_block')->build();
   $form['form_normal'] = array(
     '#type' => 'item',
-    '#title'=> 'Register'
+    '#title'=> ''
   );
   $form['form_normal']['field_full_name'] = $form['field_full_name'];
   $form['form_normal']['field_full_name']['#weight'] = -1;
@@ -52,10 +52,17 @@ function c4a_user_form_user_register_form_alter(&$form, \Drupal\Core\Form\FormSt
   $form['form_normal']['account']['name']['#description']='';
   $form['form_normal']['account']['mail']['#description'] = '';
   $form['form_normal']['account']['#weight'] = 1;
+  $form['field_job']['#title'] = '';
+  $form['field_user_country']['#title'] = '';
   unset($form['account']);
   unset($form['field_full_name']);
   unset($form['user_picture']);
 
-//  $form['social']['facebook'] = $block;
+  $form['#prefix'] = render($block).'<div class="from-wrapper">';
+  $form['#suffix'] = '</div>';
+
+  $form['#attributes'] = array('class' => array('pure-form','pure-form-stacked','c4a-register'));
+  $form['#form_placeholder'] = TRUE;
+//  kint($form);die();
 //    print_r(array_keys($form));die();
 }

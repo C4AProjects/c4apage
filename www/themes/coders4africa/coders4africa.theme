@@ -8,6 +8,8 @@
 use Drupal\Component\Utility\String;
 use Drupal\Component\Utility\Xss;
 use Drupal\Core\Template\Attribute;
+use Drupal\Component\Serialization\Json;
+
 
 /**
  * Implements hook_preprocess_HOOK() for page.html.twig.
@@ -104,5 +106,26 @@ function coders4africa_library_alter(array &$library, $name) {
 
   if(theme_get_setting('disable_selectivizr', 'coders4africa') == TRUE) {
 
+  }
+}
+
+function coders4africa_preprocess_menu(&$vars,$hook){
+  if ($vars['theme_hook_original'] == 'menu__main') { // We're doing that for main menu.
+    $options = array( 'attributes' =>
+      array(
+        'class' => 'use-ajax',
+        'data-dialog-type' => 'modal',
+        'data-dialog-options' => json_encode(array(
+          'width' => 830,
+          'dialogClass' => 'c4auser-ui-dialog',
+        ))
+      )
+    );
+    if($vars['items']['c4a_config.login']){
+      $vars['items']['c4a_config.login']['url']->setOptions($options);
+    }
+    if($vars['items']['c4a_config.register']){
+      $vars['items']['c4a_config.register']['url']->setOptions($options);
+    }
   }
 }

@@ -186,6 +186,88 @@ header nav ul li a:focus, header nav ul li a:hover {
     padding-top: 0px;
   }
 }
+/* line 1, ../sass/partials/layout/_modal.scss */
+.c4auser-ui-dialog {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+.c4auser-ui-dialog:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 4, ../sass/partials/layout/_modal.scss */
+.c4auser-ui-dialog .ui-dialog-content .imgsection {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 7, ../sass/partials/layout/_modal.scss */
+.c4auser-ui-dialog .ui-dialog-content .from-wrapper {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@media (min-width: 48em) {
+  /* line 15, ../sass/partials/layout/_modal.scss */
+  .c4auser-ui-dialog {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+  .c4auser-ui-dialog:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  /* line 18, ../sass/partials/layout/_modal.scss */
+  .c4auser-ui-dialog .ui-dialog-content .imgsection {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  /* line 21, ../sass/partials/layout/_modal.scss */
+  .c4auser-ui-dialog .ui-dialog-content .from-wrapper {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-right: 0;
+  }
+}
+@media (min-width: 62em) {
+  /* line 30, ../sass/partials/layout/_modal.scss */
+  .c4auser-ui-dialog {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+  .c4auser-ui-dialog:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+@media (min-width: 76.5em) {
+  /* line 36, ../sass/partials/layout/_modal.scss */
+  .c4auser-ui-dialog {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+  .c4auser-ui-dialog:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
 /**
  * @file
  * Main Grid.
@@ -216,13 +298,14 @@ body {
   width: 250px;
   font-size: 25px;
   line-height: 40px;
-  padding: 5px 5px 5px 5px;
+  padding: 13px;
+  text-decoration: none;
   border-radius: 30px/30px;
   text-align: center;
   color: #FFF;
 }
 
-/* line 32, ../sass/partials/layout/_maingrid.scss */
+/* line 33, ../sass/partials/layout/_maingrid.scss */
 .btn.btn-rounded-orange:hover,
 .btn.btn-rounded-orange.active {
   color: #FFF;
@@ -232,7 +315,7 @@ body {
   box-shadow: none;
 }
 
-/* line 40, ../sass/partials/layout/_maingrid.scss */
+/* line 41, ../sass/partials/layout/_maingrid.scss */
 .btn-rounded-orange.focus, .btn-rounded-orange:focus {
   background-color: #666;
   border-bottom-color: #CCC;
@@ -242,7 +325,7 @@ body {
   color: #FD9539;
 }
 
-/* line 50, ../sass/partials/layout/_maingrid.scss */
+/* line 51, ../sass/partials/layout/_maingrid.scss */
 .btn.btn-black {
   background-color: #000;
   height: 50px;
@@ -253,7 +336,7 @@ body {
   color: #FFF;
 }
 
-/* line 60, ../sass/partials/layout/_maingrid.scss */
+/* line 61, ../sass/partials/layout/_maingrid.scss */
 .btn.btn-black:hover,
 .btn.btn-black.active {
   color: #FFF;
@@ -263,7 +346,7 @@ body {
   box-shadow: none;
 }
 
-/* line 68, ../sass/partials/layout/_maingrid.scss */
+/* line 69, ../sass/partials/layout/_maingrid.scss */
 .btn-black.focus, .btn-black:focus {
   background-color: #666;
   border-bottom-color: #CCC;
@@ -273,7 +356,7 @@ body {
   color: #FD9539;
 }
 
-/* line 77, ../sass/partials/layout/_maingrid.scss */
+/* line 78, ../sass/partials/layout/_maingrid.scss */
 .icon-nav {
   border: 0px none currentColor;
   border-radius: 100%;
@@ -291,55 +374,55 @@ body {
   vertical-align: middle;
 }
 
-/* line 93, ../sass/partials/layout/_maingrid.scss */
+/* line 94, ../sass/partials/layout/_maingrid.scss */
 .icon-nav:hover,
 .icon-nav:active {
   color: #FFF;
   background-color: #FD9539;
 }
 
-/* line 99, ../sass/partials/layout/_maingrid.scss */
+/* line 100, ../sass/partials/layout/_maingrid.scss */
 .fadeInLeft {
   animation-name: fadeInLeft;
 }
 
-/* line 102, ../sass/partials/layout/_maingrid.scss */
+/* line 103, ../sass/partials/layout/_maingrid.scss */
 .animated {
   animation-duration: 1s;
   animation-fill-mode: both;
 }
 
-/* line 106, ../sass/partials/layout/_maingrid.scss */
+/* line 107, ../sass/partials/layout/_maingrid.scss */
 p {
   font-size: 16px;
   line-height: 1.6em;
   margin: 0 0 20px;
 }
 
-/* line 111, ../sass/partials/layout/_maingrid.scss */
+/* line 112, ../sass/partials/layout/_maingrid.scss */
 .dark-font {
   color: #575757;
 }
 
-/* line 114, ../sass/partials/layout/_maingrid.scss */
+/* line 115, ../sass/partials/layout/_maingrid.scss */
 .section-heading h3 {
   line-height: 30px;
   margin-bottom: 5px;
 }
 
-/* line 118, ../sass/partials/layout/_maingrid.scss */
+/* line 119, ../sass/partials/layout/_maingrid.scss */
 h3, .h3 {
   font-size: 24px;
 }
 
-/* line 121, ../sass/partials/layout/_maingrid.scss */
+/* line 122, ../sass/partials/layout/_maingrid.scss */
 .boxed-grey {
   background: #f9f9f9 none repeat scroll 0 0;
   margin-right: 20px;
   padding: 10px;
 }
 
-/* line 126, ../sass/partials/layout/_maingrid.scss */
+/* line 127, ../sass/partials/layout/_maingrid.scss */
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   color: inherit;
   font-family: inherit;
@@ -347,12 +430,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   line-height: 1.1;
 }
 
-/* line 132, ../sass/partials/layout/_maingrid.scss */
+/* line 133, ../sass/partials/layout/_maingrid.scss */
 .marginbot-50 {
   margin-bottom: 50px !important;
 }
 
-/* line 136, ../sass/partials/layout/_maingrid.scss */
+/* line 137, ../sass/partials/layout/_maingrid.scss */
 .home-section {
   padding-top: 70px;
   padding-bottom: 50px;
@@ -361,7 +444,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   z-index: 120;
 }
 
-/* line 143, ../sass/partials/layout/_maingrid.scss */
+/* line 144, ../sass/partials/layout/_maingrid.scss */
 .section-heading {
   text-transform: uppercase;
   display: block;
@@ -369,7 +452,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-right: 85px;
 }
 
-/* line 149, ../sass/partials/layout/_maingrid.scss */
+/* line 150, ../sass/partials/layout/_maingrid.scss */
 .section-heading h2 {
   font-size: 30px;
   font-weight: 500;
@@ -377,19 +460,19 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: 700;
 }
 
-/* line 155, ../sass/partials/layout/_maingrid.scss */
+/* line 156, ../sass/partials/layout/_maingrid.scss */
 .section-heading h3 {
   font-weight: 100px;
   line-height: 30px;
   margin-bottom: 5px;
 }
 
-/* line 160, ../sass/partials/layout/_maingrid.scss */
+/* line 161, ../sass/partials/layout/_maingrid.scss */
 .section-heading i {
   margin-bottom: 20px;
 }
 
-/* line 163, ../sass/partials/layout/_maingrid.scss */
+/* line 164, ../sass/partials/layout/_maingrid.scss */
 label {
   display: inline-block;
   font-weight: 700;
@@ -397,7 +480,7 @@ label {
 }
 
 /* Mobile First */
-/* line 169, ../sass/partials/layout/_maingrid.scss */
+/* line 170, ../sass/partials/layout/_maingrid.scss */
 #main {
   max-width: 100%;
   margin-left: auto;
@@ -410,18 +493,18 @@ label {
   display: block;
   clear: both;
 }
-/* line 172, ../sass/partials/layout/_maingrid.scss */
+/* line 173, ../sass/partials/layout/_maingrid.scss */
 #main #aside_left {
   display: none;
 }
-/* line 176, ../sass/partials/layout/_maingrid.scss */
+/* line 177, ../sass/partials/layout/_maingrid.scss */
 #main #content {
   width: 100%;
   float: left;
   margin-left: 0;
   margin-right: 0;
 }
-/* line 179, ../sass/partials/layout/_maingrid.scss */
+/* line 180, ../sass/partials/layout/_maingrid.scss */
 #main #content .region #block-serviceblock, #main #content .region #block-factblock {
   display: block;
   padding-bottom: 50px;
@@ -429,7 +512,7 @@ label {
   position: relative;
   z-index: 120;
 }
-/* line 186, ../sass/partials/layout/_maingrid.scss */
+/* line 187, ../sass/partials/layout/_maingrid.scss */
 #main #content .region #block-welcomesection {
   width: 100%;
   position: relative;
@@ -442,7 +525,7 @@ label {
   padding: 10% 0 0 0;
   z-index: 10;
 }
-/* line 187, ../sass/partials/layout/_maingrid.scss */
+/* line 188, ../sass/partials/layout/_maingrid.scss */
 #main #content .region #block-welcomesection .item {
   -moz-transition: opacity ease-in-out 500ms;
   -o-transition: opacity ease-in-out 500ms;
@@ -458,12 +541,12 @@ label {
   background-color: #000;
   z-index: -1;
 }
-/* line 214, ../sass/partials/layout/_maingrid.scss */
+/* line 215, ../sass/partials/layout/_maingrid.scss */
 #main #content .region #block-welcomesection .slogan {
   text-align: center;
   margin-bottom: 170px;
 }
-/* line 219, ../sass/partials/layout/_maingrid.scss */
+/* line 220, ../sass/partials/layout/_maingrid.scss */
 #main #content .region #block-welcomesection .logo {
   background: url("../img/c4alogo.png") no-repeat top center;
   height: 108px;
@@ -471,11 +554,11 @@ label {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 228, ../sass/partials/layout/_maingrid.scss */
+/* line 229, ../sass/partials/layout/_maingrid.scss */
 #main #content .region #block-welcomesection .intro-text {
   font-size: 18px;
 }
-/* line 232, ../sass/partials/layout/_maingrid.scss */
+/* line 233, ../sass/partials/layout/_maingrid.scss */
 #main #content .region #block-welcomesection .slogan h2 {
   color: #FFF;
   text-shadow: none;
@@ -491,23 +574,23 @@ label {
   border-style: none;
   text-shadow: -1px 0 1px #000;
 }
-/* line 248, ../sass/partials/layout/_maingrid.scss */
+/* line 249, ../sass/partials/layout/_maingrid.scss */
 #main #content .region #block-welcomesection .slogan h4 {
   color: #fff;
   text-shadow: -1px 1px 1px #000;
 }
-/* line 253, ../sass/partials/layout/_maingrid.scss */
+/* line 254, ../sass/partials/layout/_maingrid.scss */
 #main #content .region #block-welcomesection .network-btn {
   position: relative;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
-/* line 260, ../sass/partials/layout/_maingrid.scss */
+/* line 261, ../sass/partials/layout/_maingrid.scss */
 #main #content .region #block-serviceblock {
   text-align: center;
 }
-/* line 265, ../sass/partials/layout/_maingrid.scss */
+/* line 266, ../sass/partials/layout/_maingrid.scss */
 #main #content .region #block-serviceblock .content .container .row .col-md-4 {
   color: #575757;
   width: 100%;
@@ -516,22 +599,22 @@ label {
   margin-right: 0;
   margin-right: 0;
 }
-/* line 269, ../sass/partials/layout/_maingrid.scss */
+/* line 270, ../sass/partials/layout/_maingrid.scss */
 #main #content .region #block-serviceblock .content .container .row .col-md-4 .service-icon {
   margin-bottom: 20px;
 }
-/* line 277, ../sass/partials/layout/_maingrid.scss */
+/* line 278, ../sass/partials/layout/_maingrid.scss */
 #main #content .region #block-factblock {
   text-align: center;
   background: #fc9439 none repeat scroll 0 0;
   color: #fff;
 }
-/* line 283, ../sass/partials/layout/_maingrid.scss */
+/* line 284, ../sass/partials/layout/_maingrid.scss */
 #main #content .region #block-factblock .content .container .row {
   overflow: hidden;
   margin: 0 34px;
 }
-/* line 287, ../sass/partials/layout/_maingrid.scss */
+/* line 288, ../sass/partials/layout/_maingrid.scss */
 #main #content .region #block-factblock .content .container .row .col-line {
   color: #575757;
   width: 49.15254%;
@@ -541,21 +624,21 @@ label {
   border-left: 1px solid #fff;
   border-bottom: 1px solid #fff;
 }
-/* line 293, ../sass/partials/layout/_maingrid.scss */
+/* line 294, ../sass/partials/layout/_maingrid.scss */
 #main #content .region #block-factblock .content .container .row .col-line .fact-box {
   margin: 5px;
   text-align: center;
   color: #fff;
   padding-top: 20px;
 }
-/* line 299, ../sass/partials/layout/_maingrid.scss */
+/* line 300, ../sass/partials/layout/_maingrid.scss */
 #main #content .region #block-factblock .content .container .row .col-line .fact-desc .number {
   display: block;
   font-size: 26px;
   font-weight: 500;
   text-align: center;
 }
-/* line 305, ../sass/partials/layout/_maingrid.scss */
+/* line 306, ../sass/partials/layout/_maingrid.scss */
 #main #content .region #block-factblock .content .container .row .col-line .fact-desc .desc {
   display: block;
   font-size: 14px;
@@ -563,21 +646,21 @@ label {
   text-align: center;
   text-transform: uppercase;
 }
-/* line 313, ../sass/partials/layout/_maingrid.scss */
+/* line 314, ../sass/partials/layout/_maingrid.scss */
 #main #content .region #block-factblock .content .container .row .col-line:first-child {
   border-left: medium none;
 }
-/* line 316, ../sass/partials/layout/_maingrid.scss */
+/* line 317, ../sass/partials/layout/_maingrid.scss */
 #main #content .region #block-factblock .content .container .row .col-line:nth-last-child(2) {
   border-left: medium none;
 }
-/* line 329, ../sass/partials/layout/_maingrid.scss */
+/* line 330, ../sass/partials/layout/_maingrid.scss */
 #main #aside_right {
   display: none;
 }
 
 @media (min-width: 48em) {
-  /* line 337, ../sass/partials/layout/_maingrid.scss */
+  /* line 338, ../sass/partials/layout/_maingrid.scss */
   #main {
     max-width: 100%;
     margin-left: auto;
@@ -589,30 +672,30 @@ label {
     display: block;
     clear: both;
   }
-  /* line 346, ../sass/partials/layout/_maingrid.scss */
+  /* line 347, ../sass/partials/layout/_maingrid.scss */
   #main #content .region #block-factblock .content .container .row .col-line {
     width: 49.15254%;
     float: left;
     margin-right: 1.69492%;
     margin-right: 0;
   }
-  /* line 349, ../sass/partials/layout/_maingrid.scss */
+  /* line 350, ../sass/partials/layout/_maingrid.scss */
   #main #content .region #block-factblock .content .container .row .col-line .fact-box {
     height: auto;
     max-width: 200px;
     margin: 20px;
   }
-  /* line 355, ../sass/partials/layout/_maingrid.scss */
+  /* line 356, ../sass/partials/layout/_maingrid.scss */
   #main #content .region #block-factblock .content .container .row .col-line .fact-desc .number {
     font-size: 36px;
   }
-  /* line 358, ../sass/partials/layout/_maingrid.scss */
+  /* line 359, ../sass/partials/layout/_maingrid.scss */
   #main #content .region #block-factblock .content .container .row .col-line .fact-desc .desc {
     font-size: 24px;
   }
 }
 @media (min-width: 62em) {
-  /* line 373, ../sass/partials/layout/_maingrid.scss */
+  /* line 374, ../sass/partials/layout/_maingrid.scss */
   #main {
     max-width: 100%;
     margin-left: auto;
@@ -624,11 +707,11 @@ label {
     display: block;
     clear: both;
   }
-  /* line 382, ../sass/partials/layout/_maingrid.scss */
+  /* line 383, ../sass/partials/layout/_maingrid.scss */
   #main #content .region #block-serviceblock {
     text-align: center;
   }
-  /* line 387, ../sass/partials/layout/_maingrid.scss */
+  /* line 388, ../sass/partials/layout/_maingrid.scss */
   #main #content .region #block-serviceblock .content .container .row .col-md-4 {
     color: #575757;
     width: 32.20339%;
@@ -636,11 +719,11 @@ label {
     margin-right: 1.69492%;
     margin-right: 0;
   }
-  /* line 399, ../sass/partials/layout/_maingrid.scss */
+  /* line 400, ../sass/partials/layout/_maingrid.scss */
   #main #content .region #block-factblock .content .container .row {
     border-bottom: 1px solid #FFF;
   }
-  /* line 401, ../sass/partials/layout/_maingrid.scss */
+  /* line 402, ../sass/partials/layout/_maingrid.scss */
   #main #content .region #block-factblock .content .container .row .col-line {
     width: 23.72881%;
     float: left;
@@ -649,41 +732,41 @@ label {
     border-left: 1px solid #fff;
     border-bottom: none;
   }
-  /* line 406, ../sass/partials/layout/_maingrid.scss */
+  /* line 407, ../sass/partials/layout/_maingrid.scss */
   #main #content .region #block-factblock .content .container .row .col-line .fact-box {
     height: auto;
     max-width: 200px;
     margin: 20px;
   }
-  /* line 412, ../sass/partials/layout/_maingrid.scss */
+  /* line 413, ../sass/partials/layout/_maingrid.scss */
   #main #content .region #block-factblock .content .container .row .col-line .fact-desc .number {
     font-size: 36px;
   }
-  /* line 415, ../sass/partials/layout/_maingrid.scss */
+  /* line 416, ../sass/partials/layout/_maingrid.scss */
   #main #content .region #block-factblock .content .container .row .col-line .fact-desc .desc {
     font-size: 24px;
   }
-  /* line 419, ../sass/partials/layout/_maingrid.scss */
+  /* line 420, ../sass/partials/layout/_maingrid.scss */
   #main #content .region #block-factblock .content .container .row .col-line:first-child {
     border-left: none;
   }
-  /* line 422, ../sass/partials/layout/_maingrid.scss */
+  /* line 423, ../sass/partials/layout/_maingrid.scss */
   #main #content .region #block-factblock .content .container .row .col-line:nth-last-child(2) {
     border-left: 1px solid #fff;
   }
-  /* line 427, ../sass/partials/layout/_maingrid.scss */
+  /* line 428, ../sass/partials/layout/_maingrid.scss */
   #main #content .region #block-factblock .content .container .row:last-child {
     border-bottom: none;
   }
-  /* line 434, ../sass/partials/layout/_maingrid.scss */
+  /* line 435, ../sass/partials/layout/_maingrid.scss */
   #main #content .region #block-contactblock .boxed-grey {
     padding: 0px 10px;
   }
-  /* line 437, ../sass/partials/layout/_maingrid.scss */
+  /* line 438, ../sass/partials/layout/_maingrid.scss */
   #main #content .region #block-contactblock .dark-font {
     margin-top: 10px;
   }
-  /* line 440, ../sass/partials/layout/_maingrid.scss */
+  /* line 441, ../sass/partials/layout/_maingrid.scss */
   #main #content .region #block-contactblock .blog {
     background: #000 url("../img/blog-bg.jpg") no-repeat scroll 100% 100%;
     float: right;
@@ -692,7 +775,7 @@ label {
     width: 100%;
     position: relative;
   }
-  /* line 449, ../sass/partials/layout/_maingrid.scss */
+  /* line 450, ../sass/partials/layout/_maingrid.scss */
   #main #content .region #block-contactblock .blog .item {
     background-color: #000;
     display: block;
@@ -705,7 +788,7 @@ label {
     width: 100%;
     z-index: 0;
   }
-  /* line 461, ../sass/partials/layout/_maingrid.scss */
+  /* line 462, ../sass/partials/layout/_maingrid.scss */
   #main #content .region #block-contactblock .blog .widget-contact {
     color: #fff;
     margin-top: 20%;
@@ -713,7 +796,7 @@ label {
     position: relative;
     text-align: left;
   }
-  /* line 467, ../sass/partials/layout/_maingrid.scss */
+  /* line 468, ../sass/partials/layout/_maingrid.scss */
   #main #content .region #block-contactblock .blog .widget-contact a.btn {
     border-color: #fff;
     border-radius: 0;
@@ -737,7 +820,7 @@ label {
     vertical-align: middle;
     white-space: nowrap;
   }
-  /* line 492, ../sass/partials/layout/_maingrid.scss */
+  /* line 493, ../sass/partials/layout/_maingrid.scss */
   #main #content .region #block-contactblock form#contact-message-feedback-form label {
     text-align: left !important;
     display: block;
@@ -747,19 +830,19 @@ label {
     font-size: 12px;
     color: #666;
   }
-  /* line 502, ../sass/partials/layout/_maingrid.scss */
+  /* line 503, ../sass/partials/layout/_maingrid.scss */
   #main #content .region #block-contactblock form#contact-message-feedback-form input, #main #content .region #block-contactblock form#contact-message-feedback-form select, #main #content .region #block-contactblock form#contact-message-feedback-form textarea {
     border-radius: 0;
     border: 1px solid #eee;
     -webkit-box-shadow: none;
     box-shadow: none;
   }
-  /* line 509, ../sass/partials/layout/_maingrid.scss */
+  /* line 510, ../sass/partials/layout/_maingrid.scss */
   #main #content .region #block-contactblock form#contact-message-feedback-form input:focus, #main #content .region #block-contactblock form#contact-message-feedback-form select:focus, #main #content .region #block-contactblock form#contact-message-feedback-form textarea:focus {
     -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   }
-  /* line 513, ../sass/partials/layout/_maingrid.scss */
+  /* line 514, ../sass/partials/layout/_maingrid.scss */
   #main #content .region #block-contactblock .form-text, #main #content .region #block-contactblock .form-email {
     background-color: #fff;
     background-image: none;
@@ -775,12 +858,12 @@ label {
     transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
     width: 92%;
   }
-  /* line 529, ../sass/partials/layout/_maingrid.scss */
+  /* line 530, ../sass/partials/layout/_maingrid.scss */
   #main #content .region #block-contactblock textarea {
     width: 92%;
     height: 129px;
   }
-  /* line 533, ../sass/partials/layout/_maingrid.scss */
+  /* line 534, ../sass/partials/layout/_maingrid.scss */
   #main #content .region #block-contactblock .form-submit {
     border-color: #fff;
     border-radius: 0;
@@ -792,31 +875,31 @@ label {
     font-size: 14px;
     font-weight: 200;
   }
-  /* line 548, ../sass/partials/layout/_maingrid.scss */
+  /* line 549, ../sass/partials/layout/_maingrid.scss */
   #main #content .region #block-contactblock .content .container .row .col-md-7 {
     width: 57.62712%;
     float: left;
     margin-right: 1.69492%;
   }
-  /* line 551, ../sass/partials/layout/_maingrid.scss */
+  /* line 552, ../sass/partials/layout/_maingrid.scss */
   #main #content .region #block-contactblock .content .container .row .col-md-7 .boxed-grey .col-md-6 {
     width: 49.15254%;
     float: left;
     margin-right: 1.69492%;
   }
-  /* line 554, ../sass/partials/layout/_maingrid.scss */
+  /* line 555, ../sass/partials/layout/_maingrid.scss */
   #main #content .region #block-contactblock .content .container .row .col-md-7 .boxed-grey #edit-message-wrapper {
     width: 49.15254%;
     float: right;
     margin-right: 0;
   }
-  /* line 559, ../sass/partials/layout/_maingrid.scss */
+  /* line 560, ../sass/partials/layout/_maingrid.scss */
   #main #content .region #block-contactblock .content .container .row .col-md-5 {
     width: 40.67797%;
     float: right;
     margin-right: 0;
   }
-  /* line 569, ../sass/partials/layout/_maingrid.scss */
+  /* line 570, ../sass/partials/layout/_maingrid.scss */
   #main #aside_right {
     width: 23.72881%;
     float: right;
@@ -825,7 +908,7 @@ label {
   }
 }
 @media (min-width: 76.5em) {
-  /* line 578, ../sass/partials/layout/_maingrid.scss */
+  /* line 579, ../sass/partials/layout/_maingrid.scss */
   #main {
     max-width: 100%;
     margin-left: auto;
@@ -1057,10 +1140,745 @@ label {
   color: #999;
 }
 
+/* line 1, ../sass/partials/component/_modal.scss */
+.c4auser-ui-dialog {
+  height: auto;
+  padding: 15px;
+}
+/* line 4, ../sass/partials/component/_modal.scss */
+.c4auser-ui-dialog .ui-dialog-titlebar {
+  background-color: #ccc;
+  border: 1px solid transparent;
+  border-radius: 0;
+  color: #fff;
+  display: block;
+  margin: 0 0 5px;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+}
+/* line 19, ../sass/partials/component/_modal.scss */
+.c4auser-ui-dialog .ui-dialog-content .imgsection .img-responsive {
+  width: 100%;
+  background: url("../img/joinus.png") no-repeat top center;
+  height: 250px;
+  background-size: contain;
+}
+/* line 25, ../sass/partials/component/_modal.scss */
+.c4auser-ui-dialog .ui-dialog-content .imgsection .section-heading {
+  text-align: center;
+}
+/* line 33, ../sass/partials/component/_modal.scss */
+.c4auser-ui-dialog .ui-dialog-content .form-type-select label {
+  display: none;
+}
+/* line 37, ../sass/partials/component/_modal.scss */
+.c4auser-ui-dialog .ui-dialog-content input, .c4auser-ui-dialog .ui-dialog-content select {
+  width: 100%;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  color: #555;
+  display: block;
+  font-size: 14px;
+  height: 34px;
+  line-height: 1.42857;
+  padding: 6px 12px;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+
+/* line 55, ../sass/partials/component/_modal.scss */
+.ui-dialog .ui-dialog-buttonpane {
+  background: none;
+  border: none;
+  margin-top: 0;
+  padding: 0;
+}
+/* line 60, ../sass/partials/component/_modal.scss */
+.ui-dialog .ui-dialog-buttonpane button {
+  cursor: pointer;
+  background: #4d4d4d none repeat scroll 0 0;
+  border: 1px solid #4d4d4d;
+  color: #ffffff;
+  margin: 0.5em 0.4em 0.5em 0;
+}
+/* line 66, ../sass/partials/component/_modal.scss */
+.ui-dialog .ui-dialog-buttonpane button:hover {
+  background: lightgrey;
+}
+
 /**
  * @file
  * Theme.
  */
+/*!
+Pure v0.6.0
+Copyright 2014 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+https://github.com/yahoo/pure/blob/master/LICENSE.md
+*/
+/*csslint box-model:false*/
+/*
+Box-model set to false because we're setting a height on select elements, which
+also have border and padding. This is done because some browsers don't render
+the padding. We explicitly set the box-model for select elements to border-box,
+so we can ignore the csslint warning.
+*/
+/* line 17, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+.pure-form input[type="text"], .pure-form input[type="password"], .pure-form input[type="email"], .pure-form input[type="url"], .pure-form input[type="date"], .pure-form input[type="month"], .pure-form input[type="time"], .pure-form input[type="datetime"], .pure-form input[type="datetime-local"], .pure-form input[type="week"], .pure-form input[type="number"], .pure-form input[type="search"], .pure-form input[type="tel"], .pure-form input[type="color"] {
+  padding: 0.5em 0.6em;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px #ddd;
+  border-radius: 4px;
+  vertical-align: middle;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 30, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+.pure-form select, .pure-form textarea {
+  padding: 0.5em 0.6em;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px #ddd;
+  border-radius: 4px;
+  vertical-align: middle;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 43, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+.pure-form input:not([type]) {
+  padding: 0.5em 0.6em;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px #ddd;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 54, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+.pure-form input[type="color"] {
+  padding: 0.2em 0.5em;
+}
+/* line 58, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+.pure-form input[type="text"]:focus, .pure-form input[type="password"]:focus, .pure-form input[type="email"]:focus, .pure-form input[type="url"]:focus, .pure-form input[type="date"]:focus, .pure-form input[type="month"]:focus, .pure-form input[type="time"]:focus, .pure-form input[type="datetime"]:focus, .pure-form input[type="datetime-local"]:focus, .pure-form input[type="week"]:focus, .pure-form input[type="number"]:focus, .pure-form input[type="search"]:focus, .pure-form input[type="tel"]:focus, .pure-form input[type="color"]:focus {
+  outline: 0;
+  border-color: #129FEA;
+}
+/* line 64, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+.pure-form select:focus, .pure-form textarea:focus {
+  outline: 0;
+  border-color: #129FEA;
+}
+/* line 70, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+.pure-form input:not([type]):focus {
+  outline: 0;
+  border-color: #129FEA;
+}
+/* line 75, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+.pure-form input[type="file"]:focus, .pure-form input[type="radio"]:focus, .pure-form input[type="checkbox"]:focus {
+  outline: thin solid #129FEA;
+  outline: 1px auto #129FEA;
+}
+/* line 81, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+.pure-form .pure-checkbox, .pure-form .pure-radio {
+  margin: 0.5em 0;
+  display: block;
+}
+/* line 87, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+.pure-form input[type="text"][disabled], .pure-form input[type="password"][disabled], .pure-form input[type="email"][disabled], .pure-form input[type="url"][disabled], .pure-form input[type="date"][disabled], .pure-form input[type="month"][disabled], .pure-form input[type="time"][disabled], .pure-form input[type="datetime"][disabled], .pure-form input[type="datetime-local"][disabled], .pure-form input[type="week"][disabled], .pure-form input[type="number"][disabled], .pure-form input[type="search"][disabled], .pure-form input[type="tel"][disabled], .pure-form input[type="color"][disabled] {
+  cursor: not-allowed;
+  background-color: #eaeded;
+  color: #cad2d3;
+}
+/* line 94, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+.pure-form select[disabled], .pure-form textarea[disabled] {
+  cursor: not-allowed;
+  background-color: #eaeded;
+  color: #cad2d3;
+}
+/* line 101, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+.pure-form input:not([type])[disabled] {
+  cursor: not-allowed;
+  background-color: #eaeded;
+  color: #cad2d3;
+}
+/* line 107, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+.pure-form input[readonly] {
+  background-color: #eee;
+  /* menu hover bg color */
+  color: #777;
+  /* menu text color */
+  border-color: #ccc;
+}
+/* line 118, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+.pure-form select[readonly], .pure-form textarea[readonly] {
+  background-color: #eee;
+  /* menu hover bg color */
+  color: #777;
+  /* menu text color */
+  border-color: #ccc;
+}
+/* line 128, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+.pure-form input:focus:invalid, .pure-form textarea:focus:invalid, .pure-form select:focus:invalid {
+  color: #b94a48;
+  border-color: #e9322d;
+}
+/* line 134, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+.pure-form input[type="file"]:focus:invalid:focus, .pure-form input[type="radio"]:focus:invalid:focus, .pure-form input[type="checkbox"]:focus:invalid:focus {
+  outline-color: #e9322d;
+}
+/* line 139, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+.pure-form select {
+  /* Normalizes the height; padding is not sufficient. */
+  height: 2.25em;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+/* line 145, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+.pure-form select[multiple] {
+  height: auto;
+}
+/* line 150, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+.pure-form label {
+  margin: 0.5em 0 0.2em;
+}
+/* line 154, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+.pure-form fieldset {
+  margin: 0;
+  padding: 0.35em 0 0.75em;
+  border: 0;
+}
+/* line 160, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+.pure-form legend {
+  display: block;
+  width: 100%;
+  padding: 0.3em 0;
+  margin-bottom: 0.3em;
+  color: #333;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/*
+Need to separate out the :not() selector from the rest of the CSS 2.1 selectors
+since IE8 won't execute CSS that contains a CSS3 selector.
+*/
+/* Chrome (as of v.32/34 on OS X) needs additional room for color to display. */
+/* May be able to remove this tweak as color inputs become more standardized across browsers. */
+/*
+Need to separate out the :not() selector from the rest of the CSS 2.1 selectors
+since IE8 won't execute CSS that contains a CSS3 selector.
+*/
+/*
+Need to separate out the :not() selector from the rest of the CSS 2.1 selectors
+since IE8 won't execute CSS that contains a CSS3 selector.
+*/
+/* line 190, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+.pure-form-stacked input[type="text"], .pure-form-stacked input[type="password"], .pure-form-stacked input[type="email"], .pure-form-stacked input[type="url"], .pure-form-stacked input[type="date"], .pure-form-stacked input[type="month"], .pure-form-stacked input[type="time"], .pure-form-stacked input[type="datetime"], .pure-form-stacked input[type="datetime-local"], .pure-form-stacked input[type="week"], .pure-form-stacked input[type="number"], .pure-form-stacked input[type="search"], .pure-form-stacked input[type="tel"], .pure-form-stacked input[type="color"], .pure-form-stacked input[type="file"] {
+  display: block;
+  margin: 0.25em 0;
+}
+/* line 196, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+.pure-form-stacked select, .pure-form-stacked label, .pure-form-stacked textarea, .pure-form-stacked input:not([type]) {
+  display: block;
+  margin: 0.25em 0;
+}
+
+/*
+Need to separate out the :not() selector from the rest of the CSS 2.1 selectors
+since IE8 won't execute CSS that contains a CSS3 selector.
+*/
+/* line 208, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+.pure-form-aligned input, .pure-form-aligned textarea, .pure-form-aligned select, .pure-form-aligned .pure-help-inline {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+}
+
+/* line 216, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+.pure-form-message-inline {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+}
+
+/* line 224, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+.pure-form-aligned textarea {
+  vertical-align: top;
+}
+/* line 228, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+.pure-form-aligned .pure-control-group {
+  margin-bottom: 0.5em;
+}
+/* line 231, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+.pure-form-aligned .pure-control-group label {
+  text-align: right;
+  display: inline-block;
+  vertical-align: middle;
+  width: 10em;
+  margin: 0 1em 0 0;
+}
+/* line 240, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+.pure-form-aligned .pure-controls {
+  margin: 1.5em 0 0 11em;
+}
+
+/* Aligned Forms */
+/* Rounded Inputs */
+/* line 250, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+.pure-form input.pure-input-rounded, .pure-form .pure-input-rounded {
+  border-radius: 2em;
+  padding: 0.5em 1em;
+}
+/* line 256, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+.pure-form .pure-group fieldset {
+  margin-bottom: 10px;
+}
+/* line 260, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+.pure-form .pure-group input, .pure-form .pure-group textarea {
+  display: block;
+  padding: 10px;
+  margin: 0 0 -1px;
+  border-radius: 0;
+  position: relative;
+  top: -1px;
+}
+/* line 269, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+.pure-form .pure-group input:focus, .pure-form .pure-group textarea:focus {
+  z-index: 3;
+}
+/* line 273, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+.pure-form .pure-group input:first-child, .pure-form .pure-group textarea:first-child {
+  top: 1px;
+  border-radius: 4px 4px 0 0;
+  margin: 0;
+}
+/* line 279, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+.pure-form .pure-group input:first-child:last-child, .pure-form .pure-group textarea:first-child:last-child {
+  top: 1px;
+  border-radius: 4px;
+  margin: 0;
+}
+/* line 285, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+.pure-form .pure-group input:last-child, .pure-form .pure-group textarea:last-child {
+  top: -2px;
+  border-radius: 0 0 4px 4px;
+  margin: 0;
+}
+/* line 291, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+.pure-form .pure-group button {
+  margin: 0.35em 0;
+}
+/* line 296, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+.pure-form .pure-input-1 {
+  width: 100%;
+}
+/* line 300, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+.pure-form .pure-input-2-3 {
+  width: 66%;
+}
+/* line 304, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+.pure-form .pure-input-1-2 {
+  width: 50%;
+}
+/* line 308, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+.pure-form .pure-input-1-3 {
+  width: 33%;
+}
+/* line 312, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+.pure-form .pure-input-1-4 {
+  width: 25%;
+}
+/* line 316, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+.pure-form .pure-help-inline {
+  display: inline-block;
+  padding-left: 0.3em;
+  color: #666;
+  vertical-align: middle;
+  font-size: 0.875em;
+}
+
+/* Grouped Inputs */
+/* Inline help for forms */
+/* NOTE: pure-help-inline is deprecated. Use .pure-form-message-inline instead. */
+/* line 330, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+.pure-form-message-inline {
+  display: inline-block;
+  padding-left: 0.3em;
+  color: #666;
+  vertical-align: middle;
+  font-size: 0.875em;
+}
+
+/* Block help for forms */
+/* line 340, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+.pure-form-message {
+  display: block;
+  color: #666;
+  font-size: 0.875em;
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 348, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+  .pure-form button[type="submit"] {
+    margin: 0.7em 0 0;
+  }
+  /* line 353, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+  .pure-form input:not([type]), .pure-form input[type="text"], .pure-form input[type="password"], .pure-form input[type="email"], .pure-form input[type="url"], .pure-form input[type="date"], .pure-form input[type="month"], .pure-form input[type="time"], .pure-form input[type="datetime"], .pure-form input[type="datetime-local"], .pure-form input[type="week"], .pure-form input[type="number"], .pure-form input[type="search"], .pure-form input[type="tel"], .pure-form input[type="color"] {
+    margin-bottom: 0.3em;
+    display: block;
+  }
+  /* line 359, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+  .pure-form label {
+    margin-bottom: 0.3em;
+    display: block;
+  }
+
+  /* line 366, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+  .pure-group input:not([type]), .pure-group input[type="text"], .pure-group input[type="password"], .pure-group input[type="email"], .pure-group input[type="url"], .pure-group input[type="date"], .pure-group input[type="month"], .pure-group input[type="time"], .pure-group input[type="datetime"], .pure-group input[type="datetime-local"], .pure-group input[type="week"], .pure-group input[type="number"], .pure-group input[type="search"], .pure-group input[type="tel"], .pure-group input[type="color"] {
+    margin-bottom: 0;
+  }
+
+  /* line 372, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+  .pure-form-aligned .pure-control-group label {
+    margin-bottom: 0.3em;
+    text-align: left;
+    display: block;
+    width: 100%;
+  }
+  /* line 379, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+  .pure-form-aligned .pure-controls {
+    margin: 1.5em 0 0 0;
+  }
+
+  /* NOTE: pure-help-inline is deprecated. Use .pure-form-message-inline instead. */
+  /* line 386, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms.scss */
+  .pure-form .pure-help-inline, .pure-form-message-inline, .pure-form-message {
+    display: block;
+    font-size: 0.75em;
+    /* Increased bottom padding to make it group with its related input element. */
+    padding: 0.2em 0 0.8em;
+  }
+}
+/*!
+Pure v0.6.0
+Copyright 2014 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+https://github.com/yahoo/pure/blob/master/LICENSE.md
+*/
+/*csslint box-model:false*/
+/*
+Box-model set to false because we're setting a height on select elements, which
+also have border and padding. This is done because some browsers don't render
+the padding. We explicitly set the box-model for select elements to border-box,
+so we can ignore the csslint warning.
+*/
+/* line 17, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms-nr.scss */
+.pure-form input[type="text"], .pure-form input[type="password"], .pure-form input[type="email"], .pure-form input[type="url"], .pure-form input[type="date"], .pure-form input[type="month"], .pure-form input[type="time"], .pure-form input[type="datetime"], .pure-form input[type="datetime-local"], .pure-form input[type="week"], .pure-form input[type="number"], .pure-form input[type="search"], .pure-form input[type="tel"], .pure-form input[type="color"] {
+  padding: 0.5em 0.6em;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px #ddd;
+  border-radius: 4px;
+  vertical-align: middle;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 30, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms-nr.scss */
+.pure-form select, .pure-form textarea {
+  padding: 0.5em 0.6em;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px #ddd;
+  border-radius: 4px;
+  vertical-align: middle;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 43, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms-nr.scss */
+.pure-form input:not([type]) {
+  padding: 0.5em 0.6em;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px #ddd;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 54, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms-nr.scss */
+.pure-form input[type="color"] {
+  padding: 0.2em 0.5em;
+}
+/* line 58, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms-nr.scss */
+.pure-form input[type="text"]:focus, .pure-form input[type="password"]:focus, .pure-form input[type="email"]:focus, .pure-form input[type="url"]:focus, .pure-form input[type="date"]:focus, .pure-form input[type="month"]:focus, .pure-form input[type="time"]:focus, .pure-form input[type="datetime"]:focus, .pure-form input[type="datetime-local"]:focus, .pure-form input[type="week"]:focus, .pure-form input[type="number"]:focus, .pure-form input[type="search"]:focus, .pure-form input[type="tel"]:focus, .pure-form input[type="color"]:focus {
+  outline: 0;
+  border-color: #129FEA;
+}
+/* line 64, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms-nr.scss */
+.pure-form select:focus, .pure-form textarea:focus {
+  outline: 0;
+  border-color: #129FEA;
+}
+/* line 70, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms-nr.scss */
+.pure-form input:not([type]):focus {
+  outline: 0;
+  border-color: #129FEA;
+}
+/* line 75, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms-nr.scss */
+.pure-form input[type="file"]:focus, .pure-form input[type="radio"]:focus, .pure-form input[type="checkbox"]:focus {
+  outline: thin solid #129FEA;
+  outline: 1px auto #129FEA;
+}
+/* line 81, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms-nr.scss */
+.pure-form .pure-checkbox, .pure-form .pure-radio {
+  margin: 0.5em 0;
+  display: block;
+}
+/* line 87, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms-nr.scss */
+.pure-form input[type="text"][disabled], .pure-form input[type="password"][disabled], .pure-form input[type="email"][disabled], .pure-form input[type="url"][disabled], .pure-form input[type="date"][disabled], .pure-form input[type="month"][disabled], .pure-form input[type="time"][disabled], .pure-form input[type="datetime"][disabled], .pure-form input[type="datetime-local"][disabled], .pure-form input[type="week"][disabled], .pure-form input[type="number"][disabled], .pure-form input[type="search"][disabled], .pure-form input[type="tel"][disabled], .pure-form input[type="color"][disabled] {
+  cursor: not-allowed;
+  background-color: #eaeded;
+  color: #cad2d3;
+}
+/* line 94, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms-nr.scss */
+.pure-form select[disabled], .pure-form textarea[disabled] {
+  cursor: not-allowed;
+  background-color: #eaeded;
+  color: #cad2d3;
+}
+/* line 101, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms-nr.scss */
+.pure-form input:not([type])[disabled] {
+  cursor: not-allowed;
+  background-color: #eaeded;
+  color: #cad2d3;
+}
+/* line 107, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms-nr.scss */
+.pure-form input[readonly] {
+  background-color: #eee;
+  /* menu hover bg color */
+  color: #777;
+  /* menu text color */
+  border-color: #ccc;
+}
+/* line 118, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms-nr.scss */
+.pure-form select[readonly], .pure-form textarea[readonly] {
+  background-color: #eee;
+  /* menu hover bg color */
+  color: #777;
+  /* menu text color */
+  border-color: #ccc;
+}
+/* line 128, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms-nr.scss */
+.pure-form input:focus:invalid, .pure-form textarea:focus:invalid, .pure-form select:focus:invalid {
+  color: #b94a48;
+  border-color: #e9322d;
+}
+/* line 134, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms-nr.scss */
+.pure-form input[type="file"]:focus:invalid:focus, .pure-form input[type="radio"]:focus:invalid:focus, .pure-form input[type="checkbox"]:focus:invalid:focus {
+  outline-color: #e9322d;
+}
+/* line 139, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms-nr.scss */
+.pure-form select {
+  /* Normalizes the height; padding is not sufficient. */
+  height: 2.25em;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+/* line 145, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms-nr.scss */
+.pure-form select[multiple] {
+  height: auto;
+}
+/* line 150, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms-nr.scss */
+.pure-form label {
+  margin: 0.5em 0 0.2em;
+}
+/* line 154, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms-nr.scss */
+.pure-form fieldset {
+  margin: 0;
+  padding: 0.35em 0 0.75em;
+  border: 0;
+}
+/* line 160, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms-nr.scss */
+.pure-form legend {
+  display: block;
+  width: 100%;
+  padding: 0.3em 0;
+  margin-bottom: 0.3em;
+  color: #333;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/*
+Need to separate out the :not() selector from the rest of the CSS 2.1 selectors
+since IE8 won't execute CSS that contains a CSS3 selector.
+*/
+/* Chrome (as of v.32/34 on OS X) needs additional room for color to display. */
+/* May be able to remove this tweak as color inputs become more standardized across browsers. */
+/*
+Need to separate out the :not() selector from the rest of the CSS 2.1 selectors
+since IE8 won't execute CSS that contains a CSS3 selector.
+*/
+/*
+Need to separate out the :not() selector from the rest of the CSS 2.1 selectors
+since IE8 won't execute CSS that contains a CSS3 selector.
+*/
+/* line 190, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms-nr.scss */
+.pure-form-stacked input[type="text"], .pure-form-stacked input[type="password"], .pure-form-stacked input[type="email"], .pure-form-stacked input[type="url"], .pure-form-stacked input[type="date"], .pure-form-stacked input[type="month"], .pure-form-stacked input[type="time"], .pure-form-stacked input[type="datetime"], .pure-form-stacked input[type="datetime-local"], .pure-form-stacked input[type="week"], .pure-form-stacked input[type="number"], .pure-form-stacked input[type="search"], .pure-form-stacked input[type="tel"], .pure-form-stacked input[type="color"], .pure-form-stacked input[type="file"] {
+  display: block;
+  margin: 0.25em 0;
+}
+/* line 196, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms-nr.scss */
+.pure-form-stacked select, .pure-form-stacked label, .pure-form-stacked textarea, .pure-form-stacked input:not([type]) {
+  display: block;
+  margin: 0.25em 0;
+}
+
+/*
+Need to separate out the :not() selector from the rest of the CSS 2.1 selectors
+since IE8 won't execute CSS that contains a CSS3 selector.
+*/
+/* line 208, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms-nr.scss */
+.pure-form-aligned input, .pure-form-aligned textarea, .pure-form-aligned select, .pure-form-aligned .pure-help-inline {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+}
+
+/* line 216, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms-nr.scss */
+.pure-form-message-inline {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+}
+
+/* line 224, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms-nr.scss */
+.pure-form-aligned textarea {
+  vertical-align: top;
+}
+/* line 228, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms-nr.scss */
+.pure-form-aligned .pure-control-group {
+  margin-bottom: 0.5em;
+}
+/* line 231, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms-nr.scss */
+.pure-form-aligned .pure-control-group label {
+  text-align: right;
+  display: inline-block;
+  vertical-align: middle;
+  width: 10em;
+  margin: 0 1em 0 0;
+}
+/* line 240, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms-nr.scss */
+.pure-form-aligned .pure-controls {
+  margin: 1.5em 0 0 11em;
+}
+
+/* Aligned Forms */
+/* Rounded Inputs */
+/* line 250, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms-nr.scss */
+.pure-form input.pure-input-rounded, .pure-form .pure-input-rounded {
+  border-radius: 2em;
+  padding: 0.5em 1em;
+}
+/* line 256, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms-nr.scss */
+.pure-form .pure-group fieldset {
+  margin-bottom: 10px;
+}
+/* line 260, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms-nr.scss */
+.pure-form .pure-group input, .pure-form .pure-group textarea {
+  display: block;
+  padding: 10px;
+  margin: 0 0 -1px;
+  border-radius: 0;
+  position: relative;
+  top: -1px;
+}
+/* line 269, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms-nr.scss */
+.pure-form .pure-group input:focus, .pure-form .pure-group textarea:focus {
+  z-index: 3;
+}
+/* line 273, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms-nr.scss */
+.pure-form .pure-group input:first-child, .pure-form .pure-group textarea:first-child {
+  top: 1px;
+  border-radius: 4px 4px 0 0;
+  margin: 0;
+}
+/* line 279, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms-nr.scss */
+.pure-form .pure-group input:first-child:last-child, .pure-form .pure-group textarea:first-child:last-child {
+  top: 1px;
+  border-radius: 4px;
+  margin: 0;
+}
+/* line 285, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms-nr.scss */
+.pure-form .pure-group input:last-child, .pure-form .pure-group textarea:last-child {
+  top: -2px;
+  border-radius: 0 0 4px 4px;
+  margin: 0;
+}
+/* line 291, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms-nr.scss */
+.pure-form .pure-group button {
+  margin: 0.35em 0;
+}
+/* line 296, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms-nr.scss */
+.pure-form .pure-input-1 {
+  width: 100%;
+}
+/* line 300, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms-nr.scss */
+.pure-form .pure-input-2-3 {
+  width: 66%;
+}
+/* line 304, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms-nr.scss */
+.pure-form .pure-input-1-2 {
+  width: 50%;
+}
+/* line 308, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms-nr.scss */
+.pure-form .pure-input-1-3 {
+  width: 33%;
+}
+/* line 312, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms-nr.scss */
+.pure-form .pure-input-1-4 {
+  width: 25%;
+}
+/* line 316, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms-nr.scss */
+.pure-form .pure-help-inline {
+  display: inline-block;
+  padding-left: 0.3em;
+  color: #666;
+  vertical-align: middle;
+  font-size: 0.875em;
+}
+
+/* Grouped Inputs */
+/* Inline help for forms */
+/* NOTE: pure-help-inline is deprecated. Use .pure-form-message-inline instead. */
+/* line 330, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms-nr.scss */
+.pure-form-message-inline {
+  display: inline-block;
+  padding-left: 0.3em;
+  color: #666;
+  vertical-align: middle;
+  font-size: 0.875em;
+}
+
+/* Block help for forms */
+/* line 340, ../../../../../../../../Users/ousmanesamba/.rvm/gems/ruby-2.2.1/gems/purecss-sass-0.6.0/vendor/assets/stylesheets/purecss/_forms-nr.scss */
+.pure-form-message {
+  display: block;
+  color: #666;
+  font-size: 0.875em;
+}
+
 /**
  * @file
  * Global elements.
@@ -1078,6 +1896,19 @@ body #main-wrapper #main {
 h1, h2, h3, h4, h5, h6 {
   font-family: Montserrat,sans-serif;
   margin: 0 0 20px;
+}
+
+/* line 42, ../sass/partials/theme/_global.scss */
+.section-heading h3 {
+  line-height: 30px;
+  margin-bottom: 5px;
+}
+
+/* line 46, ../sass/partials/theme/_global.scss */
+.section-heading h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
 }
 
 /**

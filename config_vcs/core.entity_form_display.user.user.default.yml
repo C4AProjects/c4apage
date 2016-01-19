@@ -3,8 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_first_name
+    - field.field.user.user.field_job
+    - field.field.user.user.field_las
+    - field.field.user.user.field_user_country
     - field.field.user.user.user_picture
   module:
+    - country
     - image
     - user
 id: user.user.default
@@ -13,11 +18,33 @@ bundle: user
 mode: default
 content:
   account:
-    weight: -10
-  contact:
-    weight: 5
-  language:
     weight: 0
+    settings: {  }
+    third_party_settings: {  }
+  field_first_name:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_job:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_las:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_user_country:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: country_default
   timezone:
     weight: 6
   user_picture:
@@ -26,5 +53,7 @@ content:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-    weight: -1
-hidden: {  }
+    weight: 3
+hidden:
+  contact: true
+  language: true

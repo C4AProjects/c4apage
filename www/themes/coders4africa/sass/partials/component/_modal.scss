@@ -1,0 +1,71 @@
+.c4auser-ui-dialog{
+  height: auto;
+  padding: 15px;
+  .ui-dialog-titlebar{
+    background-color: #ccc;
+    border: 1px solid transparent;
+    border-radius: 0;
+    color: #fff;
+    display: block;
+    margin: 0 0 5px;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+  }
+
+
+  .ui-dialog-content{
+    .imgsection{
+      .img-responsive{
+        width: 100%;
+        background: url('../img/joinus.png') no-repeat top center;
+        height:250px;
+        background-size: contain;
+      }
+      .section-heading{
+        text-align: center;
+      }
+
+    }
+    .from-wrapper{
+    }
+    .form-type-select{
+      label{
+        display: none;
+      }
+    }
+    input,select{
+      width: 100%;
+      background-color: #fff;
+      background-image: none;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+      color: #555;
+      display: block;
+      font-size: 14px;
+      height: 34px;
+      line-height: 1.42857;
+      padding: 6px 12px;
+      transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    }
+  }
+}
+.ui-dialog {
+  .ui-dialog-buttonpane {
+    background: none;
+    border:none;
+    margin-top: 0;
+    padding: 0;
+    button {
+      cursor: pointer;
+      background: #4d4d4d none repeat scroll 0 0;
+      border: 1px solid #4d4d4d;
+      color: #ffffff;
+      margin: 0.5em 0.4em 0.5em 0;
+      &:hover {
+        background:lightgrey;
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.c4auser-ui-dialog{
+  @include container(100%);
+  .ui-dialog-content{
+    .imgsection{
+      @include span (12 of 12);
+    }
+    .from-wrapper{
+      @include span (12 of 12);
+    }
+  }
+}
+
+
+@include breakpoint($bp-tablet) {
+  .c4auser-ui-dialog{
+    @include container(100%);
+    .ui-dialog-content{
+      .imgsection{
+        @include span (6 at 6 of 12);
+      }
+      .from-wrapper{
+        @include span (6 at 1 of 12);
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@include breakpoint($bp-desktop) {
+  .c4auser-ui-dialog{
+    @include container(100%);
+  }
+}
+
+@include breakpoint($bp-large) {
+  .c4auser-ui-dialog{
+    @include container(100%);
+  }
+}
+

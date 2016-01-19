@@ -1,0 +1,3 @@
+included_selectors: '.c4a-register *'
+excluded_selectors: ''
+required_indicator: text

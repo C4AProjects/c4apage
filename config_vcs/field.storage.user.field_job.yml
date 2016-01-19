@@ -1,0 +1,72 @@
+uuid: 47914b01-f121-45b0-af00-c01bbd447e18
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - user
+id: user.field_job
+field_name: field_job
+entity_type: user
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Software developer'
+      label: 'Software developer'
+    -
+      value: 'Mobile Developer'
+      label: 'Mobile Developer'
+    -
+      value: 'Web Developer'
+      label: 'Web Developer'
+    -
+      value: 'Web Designer'
+      label: 'Web Designer'
+    -
+      value: 'Graphic Designer'
+      label: 'Graphic Designer'
+    -
+      value: 'UI Designer'
+      label: 'UI Designer'
+    -
+      value: 'UX Designer'
+      label: 'UX Designer'
+    -
+      value: 'Network engineer'
+      label: 'Network engineer'
+    -
+      value: 'IT helpDesk'
+      label: 'IT helpDesk'
+    -
+      value: 'IT Analyst'
+      label: 'IT Analyst'
+    -
+      value: CTO
+      label: CTO
+    -
+      value: CIO
+      label: CIO
+    -
+      value: 'IT Manager'
+      label: 'IT Manager'
+    -
+      value: 'IT Director'
+      label: 'IT Director'
+    -
+      value: Executive
+      label: Executive
+    -
+      value: Enterpreneur
+      label: Enterpreneur
+    -
+      value: Other
+      label: Other
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

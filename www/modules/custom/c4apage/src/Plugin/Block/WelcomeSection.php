@@ -8,7 +8,8 @@
 namespace Drupal\c4apage\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
-
+use Drupal\Core\Url;
+use Drupal\Component\Serialization\Json;
 /**
  * Provides a 'WelcomeSection' block.
  *
@@ -25,6 +26,20 @@ class WelcomeSection extends BlockBase {
    */
   public function build() {
     $build = [];
+    $links = array(
+      '#type' => 'link',
+      '#title' => $this->t('Join the network'),
+      '#url' => Url::fromRoute('user.register'),
+      '#attributes' => array(
+        'class' => array('use-ajax btn btn-lg btn-rounded-orange'),
+        'data-dialog-type' => 'modal',
+        'data-dialog-options' => Json::encode(array(
+          'dialogClass' => 'c4auser-ui-dialog',
+          'width' => 830,
+
+        )),
+      ),
+    );
     $build['welcome_section']['#markup'] = '<div class="item">
     		 </div>
 	<div class="logo"></div>
@@ -36,9 +51,9 @@ class WelcomeSection extends BlockBase {
 
 		 <div class="network-btn">
 
-		<p><a class="fancybox fancybox.iframe btn btn-lg btn-rounded-orange" href="register.html"role="button">Join the network<i class="fa fa-angle-right icon-nav"></i></a></p>
+		 <p>'.render($links).'</p>
 		</div>';
-
+//    <p><a class="btn btn-lg btn-rounded-orange use-ajax" data-dialog-options="{"width":700}" data-dialog-type="modal" href="/user/register" role="button">Join the network<i class="fa fa-angle-right icon-nav"></i></a></p>
     return $build;
   }
 
