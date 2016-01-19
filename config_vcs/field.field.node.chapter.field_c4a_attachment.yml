@@ -1,0 +1,27 @@
+uuid: 15c6f3ca-5d7c-4e37-b401-1ea7b2ced83a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_c4a_attachment
+    - node.type.chapter
+  module:
+    - file
+id: node.chapter.field_c4a_attachment
+field_name: field_c4a_attachment
+entity_type: node
+bundle: chapter
+label: Attachment
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file
