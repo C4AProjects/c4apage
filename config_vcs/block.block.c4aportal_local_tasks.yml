@@ -7,7 +7,7 @@ dependencies:
 id: c4aportal_local_tasks
 theme: c4aportal
 region: content
-weight: -40
+weight: -6
 provider: null
 plugin: local_tasks_block
 settings:

@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.chapter.body
     - field.field.node.chapter.field_c4a_attachment
     - field.field.node.chapter.field_c4a_video
-    - field.field.node.chapter.field_chapter_free
     - node.type.chapter
   module:
     - file
@@ -42,12 +41,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: video_embed_field_textfield
-  field_chapter_free:
-    weight: 34
-    settings:
-      display_label: false
-    third_party_settings: {  }
-    type: boolean_checkbox
   path:
     type: path
     weight: 30

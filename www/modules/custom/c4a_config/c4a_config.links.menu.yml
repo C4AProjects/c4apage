@@ -1,12 +1,12 @@
-c4a_config.register:
-  title: 'Join us'
-  description: 'register button'
-  route_name: user.register
-  menu_name: main
-
-c4a_config.login:
-  title: 'Login'
-  description: 'login button'
-  route_name: user.login
-  menu_name: main
-
+#c4a_config.register:
+#  title: 'Join us'
+#  description: 'register button'
+#  route_name: user.register
+#  menu_name: main
+#
+#c4a_config.login:
+#  title: 'Login'
+#  description: 'login button'
+#  route_name: user.login
+#  menu_name: main
+#

@@ -9,7 +9,7 @@ dependencies:
 id: c4aportal_help
 theme: c4aportal
 region: content
-weight: -30
+weight: -9
 provider: null
 plugin: help_block
 settings:

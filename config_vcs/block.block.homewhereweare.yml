@@ -1,0 +1,26 @@
+uuid: 78f1ddf9-e314-47a3-9200-d0724ae373b2
+langcode: en
+status: true
+dependencies:
+  module:
+    - c4a_blocks
+    - system
+  theme:
+    - c4aportal
+id: homewhereweare
+theme: c4aportal
+region: footer_secondcolumn
+weight: -11
+provider: null
+plugin: where_we_are
+settings:
+  id: where_we_are
+  label: 'Home Where we are'
+  provider: c4a_blocks
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

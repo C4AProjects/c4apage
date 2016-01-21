@@ -7,7 +7,7 @@ dependencies:
 id: c4aportal_local_actions
 theme: c4aportal
 region: content
-weight: -20
+weight: -7
 provider: null
 plugin: local_actions_block
 settings:

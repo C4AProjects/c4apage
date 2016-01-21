@@ -88,7 +88,7 @@
 
       {#<!--nav id ="main-menu" class="navigation" role="navigation">#}
       {#{{ main_menu }}#}
-    {#</nav-->#}
+      {#</nav-->#}
 
       {% if page.primary_menu %}
         {{ page.primary_menu }}
@@ -98,7 +98,7 @@
 
   <div id="main-wrapper">
     {#<div class="mobile-container">#}
-      {#<a id="mobile-nav" href="#mobile-nav">MENU</a> <span>{{ site_name }}</span>#}
+    {#<a id="mobile-nav" href="#mobile-nav">MENU</a> <span>{{ site_name }}</span>#}
     {#</div>#}
 
     <div class="highlighted">
@@ -180,41 +180,41 @@
     {% endif %}
     <footer id="footer" role="footer">
 
-        {% if page.footer_firstcolumn or page.footer_secondcolumn or page.footer_thirdcolumn or page.footer_fourthcolumn %}
-          <div class="footer-info">
-            <div class="first">
-                <div class="container">
-                    {{ page.footer_firstcolumn }}
-                </div>
-            </div>
-            <div class="second">
-                <div class="container">
-                    {{ page.footer_secondcolumn }}
-                </div>
-            </div>
-            <div id="third">
-                <div class="container">
-                    {{ page.footer_thirdcolumn }}
-                </div>
-            </div>
-            <div id="fourth">
-                <div class="container">
-                    {{ page.footer_fourthcolumn }}
-                </div>
+      {% if page.footer_firstcolumn or page.footer_secondcolumn or page.footer_thirdcolumn or page.footer_fourthcolumn %}
+        <div class="footer-info">
+          <div class="first">
+            <div class="container">
+              {{ page.footer_firstcolumn }}
             </div>
           </div>
-        {% endif %}
-          <div class="footer-legal" role="contentinfo">
-              <div class="container">
-                  <div class="footer_left">
-                      {{ page.footer }}
-                  </div>
-                  <div class="footer_right">
-                      {{ page.footer2 }}
-                  </div>
-                 <span class="copyright">Copyright {{ "now" | date('Y') }}. All rights reserved. Brought to live with Drupal</span>
-              </div>
-          </div> <!-- /#footer -->
+          <div class="second">
+            <div class="container">
+              {{ page.footer_secondcolumn }}
+            </div>
+          </div>
+          <div id="third">
+            <div class="container">
+              {{ page.footer_thirdcolumn }}
+            </div>
+          </div>
+          <div id="fourth">
+            <div class="container">
+              {{ page.footer_fourthcolumn }}
+            </div>
+          </div>
+        </div>
+      {% endif %}
+      <div class="footer-legal" role="contentinfo">
+        <div class="container">
+          <div class="footer_left">
+            {{ page.footer }}
+          </div>
+          <div class="footer_right">
+            {{ page.footer2 }}
+          </div>
+          <span class="copyright">Copyright {{ "now" | date('Y') }}. All rights reserved. Brought to live with Drupal</span>
+        </div>
+      </div> <!-- /#footer -->
     </footer>
   </div>
 </div>

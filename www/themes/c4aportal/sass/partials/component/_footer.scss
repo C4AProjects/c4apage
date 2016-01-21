@@ -156,6 +156,7 @@
 @include breakpoint($bp-tablet) {
   .footer-info {
     .second {
+      @include span (12);
       .container{
         .region-footer-secondcolumn{
           #block-homewhereweare{
@@ -222,6 +223,7 @@
 @include breakpoint($bp-desktop) {
   .footer-info {
     .second {
+      @include span (12);
       .container{
         .region-footer-secondcolumn{
           #block-homewhereweare{

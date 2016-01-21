@@ -23,4 +23,6 @@ content:
     third_party_settings: {  }
   links:
     weight: 100
-hidden: {  }
+hidden:
+  field_c4a_attachment: true
+  field_c4a_video: true

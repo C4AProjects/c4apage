@@ -23,4 +23,7 @@ content:
     third_party_settings: {  }
   links:
     weight: 100
-hidden: {  }
+hidden:
+  field_course_chapter: true
+  field_course_class: true
+  field_course_school: true

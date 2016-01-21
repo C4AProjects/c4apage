@@ -1,0 +1,26 @@
+uuid: a7f54563-64c4-4920-bc00-d5566446f815
+langcode: en
+status: true
+dependencies:
+  module:
+    - c4a_blocks
+    - system
+  theme:
+    - c4aportal
+id: homedeveloperblock
+theme: c4aportal
+region: highlighted
+weight: -8
+provider: null
+plugin: home_menu
+settings:
+  id: home_menu
+  label: 'Home Developer Block'
+  provider: c4a_blocks
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

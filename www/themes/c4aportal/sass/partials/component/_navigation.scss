@@ -1,3 +1,4 @@
+
 /**
  * @file
  * Navigation.
@@ -5,7 +6,6 @@
 
 /* Mobile First */
 .menu--main {
-
   ul {
     list-style: none;
     margin: 0;
@@ -14,39 +14,16 @@
     li {
       margin: 0;
       padding: 0;
-
       a {
         margin: 0;
         padding: 0;
-        float: left;
       }
-
     }
   }
 }
 
 
 @include breakpoint($bp-tablet) {
-  ul{
-    li{
-      a{
-        color: #ffffff;
-        font-size: 0.79em;
-        padding-top: 40px;
-        text-transform: uppercase;
-        float: left;
-      }
-      a:hover,a.active{
-        color: #ff9b39;
-      }
-      .ajax-progress-throbber{
-        float: left;
-        background: url("../images/throbber.gif") center no-repeat;
-        background-size: contain;
-        width: 40px;
-      }
-    }
-  }
   .menu--main,
   .menu--main ul,
   .menu--main ul li,
@@ -144,39 +121,12 @@
 
 @include breakpoint($bp-desktop) {
   .menu--main {
-    ul{
-      li{
-        a{
-          color: #ffffff;
-          font-size: 0.79em;
-          padding-top: 40px;
-          text-transform: uppercase;
-        }
-        a:hover,a.active{
-          color: #ff9b39;
-        }
-      }
-    }
   }
 }
 
 
 @include breakpoint($bp-large) {
   .menu--main {
-    ul{
-      li{
-        a{
-          color: #ffffff;
-          font-size: 0.79em;
-          padding-top: 40px;
-          text-transform: uppercase;
-        }
-        a:hover,a.active{
-          color: #ff9b39;
-        }
-      }
-    }
   }
-
 }
 

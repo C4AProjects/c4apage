@@ -22,6 +22,7 @@
     #content{
       .region-content{
         #block-homehowdeveloperblock{
+          overflow: auto;
           margin-bottom: 20px;
           .content{
             .how_title{
@@ -84,10 +85,12 @@
 .front #content_bottom{
 
   background: #23252b  url("../images/employ.jpg") top center no-repeat;
+  overflow: auto;
   .container{
       .region-content-bottom{
         #block-homehowemployer{
           padding-bottom: 30px;
+          overflow: auto;
           .content{
             .how_title{
               text-align: center;
@@ -151,6 +154,7 @@
     .region-content-bottom2{
       #block-homehowwework{
         @include span (12);
+        overflow: auto;
         .content{
           .who_title{
             text-align: center;

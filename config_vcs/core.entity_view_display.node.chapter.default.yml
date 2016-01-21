@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.chapter.body
     - field.field.node.chapter.field_c4a_attachment
     - field.field.node.chapter.field_c4a_video
-    - field.field.node.chapter.field_chapter_free
     - node.type.chapter
   module:
     - file
@@ -38,15 +37,6 @@ content:
       link_image_to: ''
     third_party_settings: {  }
     type: video_embed_field_thumbnail
-  field_chapter_free:
-    weight: 104
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    type: boolean
   links:
     weight: 100
 hidden: {  }

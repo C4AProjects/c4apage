@@ -1,0 +1,25 @@
+uuid: 3a8d51ae-e421-4f46-aa00-cffb529b2694
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - c4aportal
+id: pagetitle
+theme: c4aportal
+region: content
+weight: -8
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }
