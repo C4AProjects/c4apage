@@ -1,0 +1,39 @@
+uuid: 3a06e911-8539-41a4-8b00-ede07a8a6519
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - user
+id: user.field_job_availability
+field_name: field_job_availability
+entity_type: user
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: na
+      label: 'Not available'
+    -
+      value: ft
+      label: Full-time
+    -
+      value: pt
+      label: Part-time
+    -
+      value: in
+      label: Internship
+    -
+      value: wr
+      label: 'Willing to relocate'
+    -
+      value: weo
+      label: 'Willing to entertain option'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

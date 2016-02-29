@@ -3,8 +3,11 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_bio
+    - field.field.user.user.field_company_name
     - field.field.user.user.field_first_name
     - field.field.user.user.field_job
+    - field.field.user.user.field_job_availability
     - field.field.user.user.field_las
     - field.field.user.user.field_user_country
     - field.field.user.user.user_picture
@@ -18,6 +21,19 @@ targetEntityType: user
 bundle: user
 mode: default
 content:
+  field_bio:
+    weight: 12
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_company_name:
+    weight: 13
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
   field_first_name:
     weight: 9
     label: above
@@ -27,6 +43,12 @@ content:
     type: string
   field_job:
     weight: 11
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_job_availability:
+    weight: 14
     label: above
     settings: {  }
     third_party_settings: {  }
